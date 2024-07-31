@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+<!-- body -->
+<div class="container">
+    <div class="takeMobile">
+        
+    </div>
+    <div class="container-inner">
+      <div class="load">
+        <div class="loader"></div>
+      </div>
+        <!-- selection -->
+       <div class="selection">
+        <ul>
+            <li>
+                <div class="step1">
+                   <div class="userSelect clicked" >1</div>
+                   <div class="select1">
+                    <p class="read">STEP 1<span>YOUR INFO</span></p>
+                   </div>
+                </div>
+            </li>
+            <li>
+                <div class="step2">
+                    <div class="userSelect">2</div>
+                    <div class="select2">
+                        <p  class="read" >STEP 2<span>SELECT PLAN</span></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="step3">
+                    <div class="userSelect">3</div>
+                    <div class="select3">
+                        <p  class="read">STEP 3<span>ADD ONS</span></p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="step4">
+                    <div class="userSelect">4</div>
+                    <div class="select4">
+                        <p  class="read">STEP 4<span>SUMMARY</span></p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+       </div>
+       
+       <!-- form -->
+       <div class="form-input">
+        <form action="">
+            <div class="form-text">
+                <p>Personal Info<span> Please provide your name, email address, and phone number.
+                </span></p>
+            </div>
+            <div class="form-input1">
+       <div class="name">
+        <label for="name">Name</label>
+        <p class="required1"></p>
+        <input type="text" id="name" placeholder="e.g. Stephen King">
+       </div>
+            <div class="email">
+                <label for="email">Email Address</label><br>
+                <p class="required2"></p>
+            <input type="email" id="email"  placeholder="e.g. stephenking@lorem.com">
+            </div>
+           <div class="phone">
+            <label for="phone">Phone Number</label><br> 
+            <p class="required3"></p>
+            <input type="number" id="phone" placeholder="e.g.+1 234 567 898">
+           </div>
+            </div>
+            <button class="next-step" type="button">Next Step</button>
+        </form>
+    </div>
+    <!-- form 2 -->
+    <div class="form-input2" hidden>
+        <form action="">
+            <div class="form-text">
+                <p>Select your plan<span>You have the option of monthly or yearly billing
+                </span></p>
+            </div>
+            <div class="form2">
+          <div class="boxBox move" id="arcade">
+            <div class="box1-img">
+                <img src="/assets/images/icon-arcade.svg" alt="">
+            </div>
+            <div class="box1-text">
+                <p>Arcade</p>
+                <p class="smallAmount">$9/mo</p>
+            </div>
+          </div>
+          <div class="boxBox" id="advance">
+            <div class="box2-img">
+                <img src="/assets/images/icon-advanced.svg" alt="">
+            </div>
+            <div class="box2-text">
+                <p>Advanced</p>
+                <p class="largeAmount">$12/mo</p>
+            </div>
+          </div>
+          <div class="boxBox" id="pro">
+            <div class="box3-img">
+                <img src="/assets/images/icon-pro.svg" alt="">
+            </div>
+            <div class="box3-text">
+                <p>Pro</p>
+                <p class="largerAmount">$15/mo</p>
+            </div>
+          </div>
+         
+        </form>
+      
+
+    <!-- form2 -->
+    <!-- form ends -->
+    </div>
+    <div class="toggle">
+        <!-- <p class="panel"></p> -->
+        <div class="month">
+            <p>Monthly</p>
+        </div>
+      <div class="switcBtn">
+        <label class="switch">
+            <input type="checkbox" class="checkBtn">
+            <span class="slider"></span>
+          </label>
+      </div>
+      <div class="year">
+        <p>Yearly</p>
+    </div>
+      </div>
+     <div class="choice">
+        <div class="choiceHome">
+            <button  type="button">Go Back</button>
+        </div>
+        <div class="choiceBtn">
+            <button class="next-step2" type="button">Next Step</button>
+        </div>
+     </div>
+    </div>
+ <!-- form 2 ends -->
+
+
+
+<!-- form2 -->
+<!-- form ends -->
+<div class="form-input3" hidden>
+    <form action="">
+        <div class="form-text">
+            <p>Pick add-ons<span>Add-ons help enhance your gaming experience
+            </span></p>
+        </div>
+       <div class="enhance-details">
+        <div class="enhanceBox"  id="online">
+            <div class="e1">
+                <input type="checkbox" class="checkBox ">
+            </div>
+            <div class="e1-details">
+               <div class="chk-read">
+                <div class="reading">
+                    <p  class="edetails">Online service<span>Acess to mutilplayer games</span></p>
+                </div>
+                <div class="amount">
+                    <p class="first">+$1/mo</p>
+                </div>
+               </div>
+            </div>
+        </div>
+        <div class="enhanceBox" id="larger" >
+            <div class="e2">
+                <input type="checkbox" class="checkBox">
+            </div>
+            <div class="e2-details">
+              <div class="chk-read">
+                <div class="reading">
+                    <p  class="edetails">Larger storage<span>Extra 1 TB of cloud save</p>
+                   </div>
+                   <div class="amount">
+                    <p class="second">+$2/mo</p>
+                   </div>
+              </div>
+            </div>
+        </div>
+        <div class="enhanceBox" id="customize">
+            <div class="e3">
+                <input type="checkbox" class="checkBox" >
+            </div>
+            <div class="e3-details">
+               <div class="chk-read">
+                <div class="reading">
+                    <p  class="edetails">Customizable profile<span>Custom theme on your profile</span></p></div>
+                    <div class="amount">
+                        <p class="third">+$2/mo</p>
+                    </div>
+
+                </div>
+               </div>
+        </div>
+       </div>
+    </form>
+    <div class="leve3Btn">
+        <div class="goBck3">
+            <p>Go Back</p>
+        </div>
+        <div class="next3-step">
+            <button>Next Step</button>
+        </div>
+    </div>
+</div>
+
+<!-- form 4 -->
+
+
+<div class="form-input4" hidden>
+    <form action="">
+        <div class="form-text">
+            <p>Finishing up <span> Double-check everything looks OK before confirming.
+            </span></p>
+        </div>
+        <div class="finish-ends">
+           <div class="finishMonthEnds">
+            <div class="finish-month">
+                Arcade(Monthly)
+            </div>
+            <div class="price-month">
+                $9/mo
+            </div>
+           </div>
+            <a class="navigate">Change</a>
+            <div class="underline"></div>
+            <div class="adds-ends">
+             <div class="onlinePress">
+                <div class="adds-month">
+                    <!-- Arcade(Monthly) -->
+                </div>
+                <div class="addsSwitch-month">
+                    <!-- $9/mo -->
+                </div>
+             </div>
+               <div class="storagePress">
+                <div class="larger-month">
+                    <!-- Arcade(Monthly) -->
+                </div>
+                <div class="largerSwitch-month">
+                    <!-- $9/mo -->
+                </div>
+               </div>
+               <div class="customizePress">
+                <div class="customize-month">
+                    <!-- Arcade(Monthly) -->
+                </div>
+                <div class="customizeSwitch-month">
+                    <!-- $9/mo -->
+                </div>
+               </div>
+            </div>
+            <div class="calculateTotal">
+                <div class="calculate">Total(per month)</div>
+                <div class="result"></div>
+            </div>
+        </div>
+        <div class="lastBtn">
+            <div class="lastBck3">
+                <p>Go Back</p>
+            </div>
+            <div class="last-step">
+                <button type="button">Confirm</button>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="congratulation" hidden>
+    <div class="congrat-img">
+        <img src="/assets/images/icon-thank-you.svg" alt="">
+    </div>
+    <div class="congrat-message">
+        <p>Thank you<span>
+            Thanks for confirming your subscription! We hope you have<br> fun 
+            using our platform. If you ever need support, please feel free<br> 
+            to email us at support@loremgaming.com.</span></p>
+    </div>
+</div>
+</div>
+</div>
+ <!-- body -->
+</body>
+<script src="index.js"></script>
+</html>
