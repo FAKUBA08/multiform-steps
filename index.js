@@ -554,6 +554,6 @@ congrat.addEventListener('click',function(){
  let newB= setInterval(() => {
       window.location.href='index.html'
       clearInterval(newB)
-  },900000);
+  }, 3000);
    }
 })
